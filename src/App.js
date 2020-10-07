@@ -10,11 +10,11 @@ function App() {
   return (
     <div>
       <div className="container">
-        <Header />
+        <Header name="Weather App" />
         <Search />
         <div className="row py-5">
           <WeatherDisplay />
-          <Login />
+          <Login login="Login" />
         </div>
       </div>
     </div>

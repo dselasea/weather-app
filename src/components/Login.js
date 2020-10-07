@@ -1,10 +1,10 @@
 import React from "react";
 
-function Login() {
+function Login(props) {
   return (
     <div className="col-md-6">
       <form className="form">
-        <h3 className="text-center text-info">Login</h3>
+        <h3 className="text-center text-info">{props.login}</h3>
         <div className="form-group">
           <label htmlFor="username" className="text-info">
             Username:
