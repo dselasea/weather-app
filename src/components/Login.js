@@ -3,7 +3,7 @@ import React from "react";
 function Login(props) {
   return (
     <div
-      className="col-md-6 d-flex flex-column justify-content-center align-items-center"
+      className="col-md-6 col d-flex flex-column justify-content-center align-items-center"
       style={{ background: "rgba(0,0,0,0.6)", padding: "4rem" }}
     >
       <div className="align-self-stretch">

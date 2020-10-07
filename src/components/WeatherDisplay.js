@@ -8,7 +8,7 @@ function WeatherDisplay() {
   const [temperature, setTemperature] = useState("5");
 
   return (
-    <div className="col-md-6">
+    <div className="col-md-6 col">
       <p className=" display-3 text-white">{time}</p>
       <p className="display-5 text-white">{date}</p>
       <p className="display-5 text-white">{country}</p>

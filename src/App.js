@@ -12,12 +12,13 @@ function App() {
       style={{
         background:
           "url(https://images.unsplash.com/photo-1585593777231-e66669194a88?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80) no-repeat center center/cover",
-        height: "100vh",
+        minHeight: "100vh",
       }}
     >
-      <div className="container py-5">
+      <div className="container py-1">
+        <Header name="Weather App" />
         <Search />
-        <div className="row py-5">
+        <div className="row py-4">
           <WeatherDisplay />
           <Login login="Login" />
         </div>

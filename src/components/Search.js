@@ -3,7 +3,7 @@ import React from "react";
 function Search() {
   return (
     <div className="row">
-      <div className="col-md-8 offset-md-2 py-5">
+      <div className="col-md-8 offset-md-2 py-2">
         <div className="input-group">
           <input
             type="text"
