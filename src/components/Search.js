@@ -13,7 +13,6 @@ function Search() {
               background: "rgba(0,0,0,0.6",
               padding: "1.5rem",
               color: "white",
-              placeholder: "white",
             }}
           />
           <div className="input-group-append">
