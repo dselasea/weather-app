@@ -8,9 +8,14 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 
 function App() {
   return (
-    <div>
-      <div className="container">
-        <Header name="Weather App" />
+    <div
+      style={{
+        background:
+          "url(https://images.unsplash.com/photo-1585593777231-e66669194a88?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80) no-repeat center center/cover",
+        height: "100vh",
+      }}
+    >
+      <div className="container py-5">
         <Search />
         <div className="row py-5">
           <WeatherDisplay />
