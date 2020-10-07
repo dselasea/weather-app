@@ -16,7 +16,7 @@ function Search() {
             }}
           />
           <div className="input-group-append">
-            <button className="btn btn-dark" type="button">
+            <button className="btn btn-dark px-4" type="button">
               <i className="fa fa-search"></i>
             </button>
           </div>
