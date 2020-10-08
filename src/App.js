@@ -15,8 +15,8 @@ function App() {
         minHeight: "100vh",
       }}
     >
+      <Header name="Weather App" />
       <div className="container py-1">
-        <Header name="Weather App" />
         <Search />
         <div className="row py-4">
           <WeatherDisplay />
