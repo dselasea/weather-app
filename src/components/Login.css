@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main-container {
+  background-image: url(https://image.freepik.com/free-vector/gorgeous-clouds-background-with-blue-sky-design_1017-25501.jpg);
+  position: relative;
+  background-size: cover;
+}
+
+.form-container {
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-flow: column;
+  z-index: 11;
+}
+
+/* Weather Component Styles */
+.weather-content {
+  width: 100%;
+  background: #16394cbb;
+  padding: 3rem;
+  color: white;
+  border-radius: 5px;
+  min-width: 500px;
+}
+
+.weather-info p {
+  margin: 0.5rem;
+}
+
+.weather-info {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+h1 {
+  color: white;
+  margin: 1rem;
+  text-align: center;
+}
+
+.login {
+  width: 50%;
+  background: #16394cbb;
+  padding: 3rem;
+  color: white;
+  border-radius: 5px;
+  min-width: 300px;
+}
+
+form div {
+  width: 100%;
+}
+
+label {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+
+input {
+  width: 100%;
+  padding: 0.9rem;
+  border: 0;
+}
+
+button {
+  padding: 0.6rem 1.7rem;
+  background-color: #f47b21;
+  color: white;
+  border: 0;
+  margin-top: 0.8rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
