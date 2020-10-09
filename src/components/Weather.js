@@ -27,16 +27,20 @@ function Weather() {
   }
 
   function getWeatherInfo(e) {
-    setWeatherNow(searchInput);
-    setWeather((prevState) => {
-      return {
-        ...prevState,
-        location: weatherNow.location.country,
-        city: weatherNow.location.name,
-        condition: weatherNow.current.condition["text"],
-        icon: weatherNow.current.condition["icon"],
-      };
-    });
+    console.log(searchInput);
+    if (searchInput === "") {
+      console.log("Empty");
+    } else {
+      setWeather((prevState) => {
+        return {
+          ...prevState,
+          location: weatherNow.location.country,
+          city: weatherNow.location.name,
+          condition: weatherNow.current.condition["text"],
+          icon: weatherNow.current.condition["icon"],
+        };
+      });
+    }
     e.preventDefault();
   }
 
@@ -52,6 +56,7 @@ function Weather() {
             onChange={getSearch}
           />
         </form>
+        {searchInput === "" ? <p>Please enter a country</p> : null}
         <button onClick={getWeatherInfo}>Search</button>
         <div className="weather-info">
           <div>
