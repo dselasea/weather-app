@@ -17,8 +17,8 @@ function Login() {
 
   function validateLogIn(e) {
     if (email === userDetails.email && password === userDetails.password) {
-      setLoggedIn(true);
       e.preventDefault();
+      setLoggedIn(true);
     }
   }
 

@@ -13,13 +13,16 @@ function Weather() {
   const icon = weather.icon;
   const [searchInput, setSearchInput] = useState("");
   const [weatherNow, setWeatherNow] = useState([]);
+  // const [loader, setLoader] = useState(true);
 
   useEffect(() => {
     fetch(
       `http://api.weatherapi.com/v1/current.json?key=3865367567c643ad88e11112200910&q=${searchInput}`
     )
       .then((response) => response.json())
-      .then((data) => setWeatherNow(data));
+      .then((data) => setWeatherNow(data))
+      .catch(err => console.log("Error Display!"));
+    // setLoader(true);
   }, [searchInput]);
 
   function getSearch(e) {
@@ -40,6 +43,7 @@ function Weather() {
           icon: weatherNow.current.condition["icon"],
         };
       });
+      // setLoader(true);
     }
     e.preventDefault();
   }
