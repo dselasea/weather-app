@@ -22,12 +22,8 @@ function Weather() {
       .then((response) => response.json())
       .then((data) => setWeatherNow(data))
       .catch(err => console.log("Error Display!"));
-    // setLoader(true);
   }, [searchInput]);
 
-  function getSearch(e) {
-    setSearchInput(e.target.value);
-  }
 
   function getWeatherInfo(e) {
     console.log(searchInput);
@@ -57,7 +53,7 @@ function Weather() {
             type="text"
             placeholder="Search Country"
             value={searchInput}
-            onChange={getSearch}
+            onChange={(e) => setSearchInput(e.target.value)}
           />
         </form>
         {searchInput === "" ? <p>Please enter a country</p> : null}
